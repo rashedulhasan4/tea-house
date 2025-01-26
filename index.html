@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea House</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<style>
-    .font-manrope-normal {
-  font-family: "Manrope", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a494f4254d.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope-normal {
+            font-family: "Manrope", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div>
-            <div>
-                <h1>It's good tea time at The Tea House</h1>
-                <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button>Explore More<img src="./images/arrow.png" alt=""></button>
+<body class="font-manrope-normal">
+    <header class="max-w-screen-xl m-auto px-3 md:px-7 lg:px-8 py-5">
+        <div class=" md:flex">
+            <!-- Banner Text    -->
+            <div class="lg:max-w-[50%] md:max-w-[50%]">
+                <h1 class="lg:text-7xl font-extrabold text-5xl">It's good tea time at The Tea House</h1>
+                <p class="text-[#777777] text-base py-3 lg:py-7 md:py-5 max-w-[75%]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="bg-gradient-to-r from-[#FF8938] to-[#FF451C] py-4 px-5 flex text-xl font-bold gap-3 text-white rounded-lg items-center">Explore More<img src="./images/arrow.png" alt=""></button>
             </div>
+            <!-- Bannar Image  -->
+             <div class="lg:mt-14 md:mt-10 relative ">
+                <div>
+                    <img class="w-full" src="./images/banner.png" alt="">
+                </div>
+                <div class="flex items-center gap-3 px-6 py-3 bg-white rounded-lg absolute lg:left-28 lg:top-96 drop-shadow-lg left-3 top-56">
+                    <div class="w-12 h-12">
+                        <i class="fa-solid fa-star text-4xl"></i> 
+                    </div>
+                    <div><p class="text-4xl font-bold ">5.00</p>
+                        <p class="text-base font-semibold text-[#777777]">Trust Poliet</p>
+                    </div>
+                </div>
+             </div>
         </div>
     </header>
 </body>
